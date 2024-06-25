@@ -20,8 +20,14 @@ function Commits() {
         const authorData = await autorDetail.json()
         const commitData = await diffDetail.json()
         console.log({authorData, commitData});
-        setAllData([commitData])
-        setAuthorDetails(authorData)
+
+        if(authorData?.message == 'Commit not found'){
+          setAllData(fileData)
+          setAuthorDetails({})
+        }else{
+          setAllData([commitData])
+          setAuthorDetails(authorData)
+        }
       }catch(e){
         console.log(e)
         setAllData(fileData)

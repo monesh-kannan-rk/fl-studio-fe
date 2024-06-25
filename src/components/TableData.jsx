@@ -1,7 +1,7 @@
 import React from 'react'
 
 function TableData({content}) {
-    console.log(content)
+    // console.log(content)
   return (
     <>
         <span>{content.header}</span>

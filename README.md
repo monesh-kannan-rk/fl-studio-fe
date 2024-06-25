@@ -1,8 +1,34 @@
-# React + Vite
+# Fleet studio FrontEnd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech
 
-Currently, two official plugins are available:
+Fleet Studio uses following packages for front end
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React js] - The library for web and native user interfaces!
+- [Vite js] - awesome web-based text editor
+- [Bootstrap] - Build fast, responsive sites with Bootstrap.
+- [Popper js] - Positioning tooltips and popovers is difficult. Popper is here to help!
+- [jQuery] - jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers
+- [Google Fonts] - for fonts
+
+And of course Dillinger itself is open source with a [public repository][dill]
+ on GitHub.
+
+## Installation
+
+Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+cd fl-studio-fe
+npm i
+npm run dev
+```
+it will be running on http://localhost:5173/repositories/Ryan%20Slade/clay/commit/a1bf367b3af680b1182cc52bb77ba095764a11f9
+
+fleet studio backend repo https://github.com/monesh-kannan-rk/fl-studio-be
+
+make sure your backend is connected or not
+
+

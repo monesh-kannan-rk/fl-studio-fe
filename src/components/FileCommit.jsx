@@ -20,7 +20,7 @@ function FileCommit({content}) {
             <div className='' data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample" onClick={handleFileClick}>
                 <img src={chevIcon()} alt='down'/>
                 <a className="">
-                    enterprise/internal/first/path/first_file.go
+                    {content?.baseFile?.path ||"enterprise/internal/first/path/first_file.go"}
                 </a>
             </div>
             <div className="collapse show code-table" id="collapseExample">

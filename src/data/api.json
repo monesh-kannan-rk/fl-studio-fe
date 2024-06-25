@@ -1,0 +1,68 @@
+[
+    {
+      "changeKind": "MODIFIED",
+      "headFile": {
+        "path": "cmd/repo-updater/repos/syncer.go"
+      },
+      "baseFile": {
+        "path": "cmd/repo-updater/repos/syncer.go"
+      },
+      "hunks": [
+        {
+          "header": "@@ -63,7 +63,7 @@ type Syncer struct {",
+          "lines": [
+            {
+              "baseLineNumber": 63,
+              "headLineNumber": 63,
+              "content": " type RunOptions struct {"
+            },
+            {
+              "baseLineNumber": 64,
+              "headLineNumber": 64,
+              "content": " \tEnqueueInterval func() time.Duration // Defaults to 1 minute"
+            },
+            {
+              "baseLineNumber": 65,
+              "headLineNumber": 65,
+              "content": " \tIsCloud         bool                 // Defaults to false"
+            },
+            {
+              "baseLineNumber": 69,
+              "headLineNumber": 68,
+              "content": " }"
+            },
+            {
+              "baseLineNumber": 70,
+              "headLineNumber": 69,
+              "content": " "
+            }
+          ]
+        },
+        {
+          "header": "@@ -134,7 +134,7 @@ func (s *syncHandler) Handle(ctx context.Context, tx dbworkerstore.Store, record",
+          "lines": [
+            {
+              "baseLineNumber": 134,
+              "headLineNumber": 134,
+              "content": " \t\tstore = ws.With(tx.Handle().DB())"
+            },
+            {
+              "baseLineNumber": 135,
+              "headLineNumber": 135,
+              "content": " \t}"
+            },
+            {
+              "baseLineNumber": 136,
+              "headLineNumber": 136,
+              "content": " "
+            },
+            {
+              "baseLineNumber": 137,
+              "headLineNumber": 136,
+              "content": "-\treturn s.syncer.SyncExternalService(ctx, store, sj.ExternalServiceID, s.minSyncInterval)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
